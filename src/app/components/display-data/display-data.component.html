@@ -2,13 +2,13 @@
 
 <table aria-label="Table displaying the recycling information" border="1px">
     <tr>
-        <th aria-label="Column for the category">Category</th>
-        <th aria-label="Column for the description">Description</th>
-        <th aria-label="Column for the store where the item can be recycled">Store</th>
-        <th aria-label="Column for the availability (all stores, or some stores)">Availability</th>
-        <th aria-label="Column describing if there is a fee to recycle">Fee</th>
-        <th>Store location</th>
-        <th>Recycling information</th>
+        <th aria-label="Column for the category" scope="col">Category</th>
+        <th aria-label="Column for the description of the item being recycled" scope="col">Description</th>
+        <th aria-label="Column for the store where the item can be recycled" scope="col">Store</th>
+        <th aria-label="Column for the availability of the recycling service (all stores, or some stores)" scope="col">Availability</th>
+        <th aria-label="Column describing if there is a fee to recycle" scope="col">Fee</th>
+        <th aria-label="Column containing a link to a store location page" scope="col">Store location</th>
+        <th aria-label="Column containing a link to a page with recycling information" scope="col">Recycling information</th>
     </tr>
     <tr *ngFor="let entry of entriesList">
         <td>{{entry.field1}}</td>
